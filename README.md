@@ -1,4 +1,4 @@
-# dvd3-Graph-visualizations
+## dvd3-Graph-visualizations
 
 
 This is an angularjs App.
@@ -11,10 +11,11 @@ Quick WAY:
 open index.html file with Morzilla FireFox.
 
 
-##Problem Statement
+## Problem Statement
 
-###Solve the following questions in the below mentioned order.
-
+### Solve the following questions in the below mentioned order.
+Data taken from file data/sample_data.json
+ 
 2. Make visualisation of all samples of groupId = 1 ​using one of scatter/line/area​ plot
 
 between rt ​and intensity ​key of eic ​key from json data provided(sample data format is
@@ -34,7 +35,8 @@ should have same color which should be shown on the legend of the plot.
 (sampleName exist in the data as “sampleName” ​key). (Optional)
 
 
-###Data Format
+### Sample Data Format
+```json
 {
 "groups": [
 	{
@@ -84,3 +86,5 @@ should have same color which should be shown on the legend of the plot.
 		]
 	}
 ]}
+
+```
