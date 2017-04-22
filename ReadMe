@@ -1,0 +1,10 @@
+This is an angularjs App.
+Install npm or apache server
+command to start app using npm : http-server 
+command to start the app using apache server: sudo service apache2 start 
+
+
+Quick WAY:
+open index.html file with Morzilla FireFox.
+
+

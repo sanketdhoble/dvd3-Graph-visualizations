@@ -1,0 +1,29 @@
+<div class="col-sm-12">
+  	<div class="col-sm-12 mar_top30">
+	  	<div class="col-sm-2">
+	  		<a href="#ques3" class="btn btn-success" >Question-3</a>
+	  	</div>
+	  	<div class="col-sm-6">
+		    <input type="file" file-model="myFile"/>
+	        <button ng-click="uploadFile()">upload me</button>
+	    </div>
+    </div>
+    <div class="col-sm-12">
+    	<p style="font-size:16px;font-weight: 800;text-align: center">Reading data from file sample_data.json</p>
+    	<p style="font-size:16px;font-weight: 700;text-align: center">Samples from group with groupId=1</p>
+    	<p style="font-size:17px;color:red;font-weight: 900;text-align: center">Line Chart</p>
+    </div>
+    <div class="container mar_bot200">
+	    <div class="col-sm-1 y-label">
+    	  Intensity in 10^6 (Y-axis)
+    	</div>
+	    <div class="col-sm-11">
+	    	<nvd3 options="options" data="data"></nvd3>
+	    </div>
+	    <div class="col-sm-12 x-label">
+	      (X-axis)  rt values 
+	    </div>
+
+    </div> 
+
+</div>

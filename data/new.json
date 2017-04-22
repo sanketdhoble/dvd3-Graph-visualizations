@@ -1,0 +1,43 @@
+{"groups": [
+{
+"groupId": 1,
+"peaks": [ {
+"sampleName": "SAMPLE_#SPMJXVC_1_2",
+"eic": {"rt": [7,8,9,10],
+        "intensity":[7,2,4,3]
+        }
+},
+{
+"sampleName": "SAMPLE_#SPMJXVC_1_3",
+"eic": {"rt": [7,8,9,10],
+        "intensity":[2,9,5,6]
+      }
+},
+{
+"sampleName": "SAMPLE_#SPMJXVC_1_1",
+"eic": {"rt": [7,8,9,10],
+      "intensity":[5,6,2,1]
+       }
+}
+]}
+,{
+"groupId": 2,
+"peaks": [ {
+"sampleName": "SAMPLE_#SPMJXVC_1_3_",
+"eic": {"rt": [7,8,9,10],
+        "intensity":[6,3,7,4]
+        }
+},
+{
+"sampleName": "SAMPLE_#SPMJXVC_1_2_",
+"eic": {"rt": [7,8,9,10],
+        "intensity":[5,6,7,8]
+       }
+},
+{
+"sampleName": "SAMPLE_#SPMJXVC_1_1_",
+"eic": {"rt": [7,8,9,10],
+        "intensity":[5,8,7,9]
+        }
+}
+]}]}
