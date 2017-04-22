@@ -68,13 +68,14 @@ testApp.controller("ques2Ctrl",function($scope,$http,$timeout) {
 
                
                //This loop is used to iterate over all peaks of groupId=1 by default. 
-                 for(var peaksIndex2=0;peaksIndex2<$scope.jsonData.groups[0].peaks.length;peaksIndex2++) 
-                  {
+                 // for(var peaksIndex2=0;peaksIndex2<$scope.jsonData.groups[0].peaks.length;peaksIndex2++) 
+                 //  {
              
                     $scope.values=[];
-                    
-                   //I will iterate over different groups with groupIndex iterator
-                      for(var groupsIndex=0;groupsIndex<$scope.jsonData.groups.length;groupsIndex++)
+                    var peaksIndex2=0;
+                    var groupsIndex=0;
+                   //I will iterate over different groups with groupsIndex iterator
+                      while(groupsIndex<$scope.jsonData.groups.length)
                        {
               
                           
@@ -108,17 +109,33 @@ testApp.controller("ques2Ctrl",function($scope,$http,$timeout) {
                           }
 
                           //console.log($scope.values);
-                     
-                      } 
-                      console.log("Length of array after pushing data from all groups with same sampleName= "+$scope.values.length)
-                      console.log("All samples with same sampleName are merged together");
+                          if($scope.jsonData.groups.length-1==groupsIndex)
+                          {
 
-                 $scope.dummyArray.push({
-                    "key":$scope.jsonData.groups[0].peaks[peaksIndex2].sampleName,
-                    "values":$scope.values  
-                   });
+                            
+                            groupsIndex=-1;
+                             console.log("Length of array after pushing data from all groups with same sampleName= "+$scope.values.length)
+                              console.log("All samples with same sampleName are merged together");
+
+                             $scope.dummyArray.push({
+                                "key":$scope.jsonData.groups[0].peaks[peaksIndex2].sampleName,
+                                "values":$scope.values  
+                               });
+                             $scope.values=[];
+                            peaksIndex2++;
+                            if(peaksIndex2==3)
+                            {
+                              break;
+                            }
+                          
+                          }
+                          
+                          groupsIndex++;
+                                  
+                      } 
+                     
            
-               }
+               // }
                $scope.data=$scope.dummyArray;
              
                 $scope.GraphOptions();
