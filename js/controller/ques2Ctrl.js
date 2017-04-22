@@ -1,4 +1,4 @@
-testApp.controller("ques3Ctrl",function($scope,fileUpload,$http,$timeout) {
+testApp.controller("ques2Ctrl",function($scope,$http,$timeout) {
       
 
       $scope.data=[];

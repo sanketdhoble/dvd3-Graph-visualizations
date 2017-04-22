@@ -1,4 +1,4 @@
-testApp.controller("mainpageCtrl",function($scope,fileUpload,$http,$timeout) {
+testApp.controller("mainpageCtrl",function($scope,$http,$timeout) {
       
 
       $scope.data=[];
@@ -6,14 +6,6 @@ testApp.controller("mainpageCtrl",function($scope,fileUpload,$http,$timeout) {
      // $scope.values=[];
 
   
-      $scope.uploadFile = function(){
-        var file = $scope.myFile;
-        console.log('file is ' );
-        console.dir(file);
-        var uploadUrl = "/fileUpload";
-        fileUpload.uploadFileToUrl(file, uploadUrl);
-    };
-
         $scope.GraphOptions=function(){
             var colors = ["red", "green","blue"];
             $scope.options = {
