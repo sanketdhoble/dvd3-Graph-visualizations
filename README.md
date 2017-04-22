@@ -16,13 +16,13 @@ open index.html file with Morzilla FireFox.
 ### Solve the following questions in the below mentioned order.
 Data taken from file data/sample_data.json
  
-2. Make visualisation of all samples of groupId = 1 ​using one of scatter/line/area​ plot
+1. Make visualisation of all samples of groupId = 1 ​using one of scatter/line/area​ plot
 
 between rt ​and intensity ​key of eic ​key from json data provided(sample data format is
 
 shown below) . In this, rt should be on X-axis and intensity should be on Y-axis.
 
-3. make visualization of all samples of all groups using one of scatter/line/area​ plot
+2. make visualization of all samples of all groups using one of scatter/line/area​ plot
 
 between rt(key in json file)​ and intensity(key in json file) ​of eic​ key from json data
 
