@@ -13,8 +13,7 @@ open index.html file with Morzilla FireFox.
 
 ## Problem Statement
 
-### Solve the following questions in the below mentioned order.
-Data taken from file data/sample_data.json
+### Data taken from file data/sample_data.json
  
 1. Make visualisation of all samples of groupId = 1 ​using one of scatter/line/area​ plot
 
